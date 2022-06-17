@@ -20,10 +20,10 @@ namespace lab_Form
         private void button1_Click(object sender, EventArgs e)
         {
             string name = textbox1.Text;    // string 變數 name自訂名稱 = 空白方框name為text1 . 開啟屬性
-            string englishname = english_name.Text;
-            string sexsex = sex.Text;
-            string mnbvc1 = mnbvc.Text;
-            MessageBox.Show("星座"+mnbvc1,"性別"+sexsex,"英文名字"+englishname);    // MessageBox為彈出視窗 . show 為顯示變數 ("hello," + 自訂名稱 ) 
+            string englishname = textbox2.Text;
+            string sex = textbox3.Text;
+            string mnbvc1 = textbox4.Text;
+            MessageBox.Show("姓名:"+name+"\n\r英文名字:"+englishname+"\n\r性別:"+sex+"\n\r星座:"+mnbvc1);    // MessageBox為彈出視窗 . show 為顯示變數 ("hello," + 自訂名稱 ) 
             
             
 

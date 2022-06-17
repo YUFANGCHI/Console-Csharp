@@ -19,19 +19,19 @@ namespace lab_Form
 
         private void button1_Click(object sender, EventArgs e)
         {
-          memmem mmm = new memmem(); // 先建立在設值
-             mmm.name = "游芳季";  
-             mmm.age = 29;
+            memmem mmm = new memmem(); // 先建立在設值    memmem 在class02-2
+            mmm.name = "游芳季";
+            mmm.age = 29;
             MessageBox.Show("姓名:" + mmm.name + ",年齡" + mmm.age);
-//--------------------------------------------------------------------------------------
+            //--------------------------------------------------------------------------------------
             memmem mmm2 = new memmem()  // 建完就有值
             {
                 name = "油坊季2",
                 age = 29
-            };
+            };  //記得要;
             MessageBox.Show("姓名:" + mmm2.name + ",年齡" + mmm2.age);
         }
-//---------------------------------------------------------------------------------------------
+        //---------------------------------------------------------------------------------------------
         private void button2_Click(object sender, EventArgs e)
         {
             // this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -53,6 +53,40 @@ namespace lab_Form
         {
             bbb.Click -= new EventHandler(bbbclick);
         }
+//----------------------------------------------------------------------------------
+        private void button3_Click(object sender, EventArgs e)
+        {
+            payment pay;
+            if (comboBox1.Text == "50%")
+            {
+                pay = discount50off;
+            }
+            else
+            {
+                pay = discount80off;
+            }
+            double Price = double.Parse(textBox1.Text);
+            double result = pay(Price);
+            MessageBox.Show(result.ToString());
+        }
+        delegate double payment(double Price);
+        double discount50off(double Price) 
+        {
+            return Price * 0.5;
+        }
+        double discount80off(double Price)
+        {
+            return Price * 0.2;
+        }
+//--------------------------------------------------------------------------------------------------
+          public class play
+        {
+           public string name;
+           public int age;
+        }
+
+
+
     }
     }
 

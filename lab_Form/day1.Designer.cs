@@ -32,9 +32,9 @@ namespace lab_Form
             this.hi = new System.Windows.Forms.Button();
             this.textbox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.english_name = new System.Windows.Forms.TextBox();
-            this.sex = new System.Windows.Forms.TextBox();
-            this.mnbvc = new System.Windows.Forms.TextBox();
+            this.textbox2 = new System.Windows.Forms.TextBox();
+            this.textbox3 = new System.Windows.Forms.TextBox();
+            this.textbox4 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -77,29 +77,29 @@ namespace lab_Form
             this.label1.TabIndex = 2;
             this.label1.Text = "姓名：";
             // 
-            // english_name
+            // textbox2
             // 
-            this.english_name.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold);
-            this.english_name.Location = new System.Drawing.Point(154, 115);
-            this.english_name.Name = "english_name";
-            this.english_name.Size = new System.Drawing.Size(156, 43);
-            this.english_name.TabIndex = 3;
+            this.textbox2.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold);
+            this.textbox2.Location = new System.Drawing.Point(154, 115);
+            this.textbox2.Name = "textbox2";
+            this.textbox2.Size = new System.Drawing.Size(156, 43);
+            this.textbox2.TabIndex = 3;
             // 
-            // sex
+            // textbox3
             // 
-            this.sex.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold);
-            this.sex.Location = new System.Drawing.Point(154, 170);
-            this.sex.Name = "sex";
-            this.sex.Size = new System.Drawing.Size(155, 43);
-            this.sex.TabIndex = 4;
+            this.textbox3.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold);
+            this.textbox3.Location = new System.Drawing.Point(154, 170);
+            this.textbox3.Name = "textbox3";
+            this.textbox3.Size = new System.Drawing.Size(155, 43);
+            this.textbox3.TabIndex = 4;
             // 
-            // mnbvc
+            // textbox4
             // 
-            this.mnbvc.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold);
-            this.mnbvc.Location = new System.Drawing.Point(154, 218);
-            this.mnbvc.Name = "mnbvc";
-            this.mnbvc.Size = new System.Drawing.Size(156, 43);
-            this.mnbvc.TabIndex = 5;
+            this.textbox4.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold);
+            this.textbox4.Location = new System.Drawing.Point(154, 218);
+            this.textbox4.Name = "textbox4";
+            this.textbox4.Size = new System.Drawing.Size(156, 43);
+            this.textbox4.TabIndex = 5;
             // 
             // label2
             // 
@@ -151,9 +151,9 @@ namespace lab_Form
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.mnbvc);
-            this.Controls.Add(this.sex);
-            this.Controls.Add(this.english_name);
+            this.Controls.Add(this.textbox4);
+            this.Controls.Add(this.textbox3);
+            this.Controls.Add(this.textbox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textbox1);
             this.Controls.Add(this.hi);
@@ -170,9 +170,9 @@ namespace lab_Form
         private System.Windows.Forms.Button hi;
         private System.Windows.Forms.TextBox textbox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox english_name;
-        private System.Windows.Forms.TextBox sex;
-        private System.Windows.Forms.TextBox mnbvc;
+        private System.Windows.Forms.TextBox textbox2;
+        private System.Windows.Forms.TextBox textbox3;
+        private System.Windows.Forms.TextBox textbox4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

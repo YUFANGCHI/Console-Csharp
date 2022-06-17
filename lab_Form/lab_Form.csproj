@@ -59,6 +59,12 @@
     <Compile Include="day2.Designer.cs">
       <DependentUpon>day2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form000.Designer.cs">
+      <DependentUpon>Form000.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="day2.resx">
       <DependentUpon>day2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form000.resx">
+      <DependentUpon>Form000.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
