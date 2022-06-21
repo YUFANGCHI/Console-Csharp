@@ -16,5 +16,81 @@ namespace HomeWork
         {
             InitializeComponent();
         }
+
+        private int beer;
+        private int tequila;
+        private int whisky;
+        private int wine;
+        int AA;
+
+        void total()
+        {
+            AA = beer * 120 + tequila * 180 + whisky * 120 + wine * 150;
+            textBox2.Text = "NT$" + AA;
+        }
+        void list()
+        {
+
+        }
+
+        private void btn_beer_Click(object sender, EventArgs e)
+        {
+            beer ++;
+            total();  //int AA = beer * 120 + tequila * 180 + whisky * 120 + wine * 150;
+                      //textBox2.Text = "NT$" + AA;
+            
+        }
+
+        private void btn_tequila_Click(object sender, EventArgs e)
+        {
+            tequila ++;
+            total();  //int AA = beer * 120 + tequila * 180 + whisky * 120 + wine * 150;
+                      //textBox2.Text = "NT$" + AA;
+        }
+
+        private void btn_whisky_Click(object sender, EventArgs e)
+        {
+            whisky++;
+            total();  //int AA = beer * 120 + tequila * 180 + whisky * 120 + wine * 150;
+                      //textBox2.Text = "NT$" + AA;
+        }
+
+        private void btn_wine_Click(object sender, EventArgs e)
+        {
+            wine++;
+            total();  //int AA = beer * 120 + tequila * 180 + whisky * 120 + wine * 150;
+                      //textBox2.Text = "NT$" + AA;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (AA==0)
+            {
+               DialogResult result =MessageBox.Show("尚未點餐","確認付款",
+                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("總金額:" +AA.ToString()+"元",
+                    "確認付款",MessageBoxButtons.OKCancel);
+            }
+            
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (AA == 0)
+            {
+                DialogResult result = MessageBox.Show("尚未點餐", "確認付款",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+               DialogResult result= MessageBox.Show("總金額:"+AA+"元"+
+                   "\n折扣金額:"+(AA*0.9).ToString(), "確認付款",MessageBoxButtons.OKCancel);
+            }
+        }
+
+  
     }
 }

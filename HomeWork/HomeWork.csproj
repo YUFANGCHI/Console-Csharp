@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="label6\text.cs" />
     <Compile Include="work01.cs">
       <SubType>Form</SubType>
     </Compile>
