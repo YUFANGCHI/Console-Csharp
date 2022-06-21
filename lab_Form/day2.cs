@@ -88,6 +88,13 @@ namespace lab_Form
 
         
         }
+        public enum sister
+        {
+            admin,  // admin=0
+            user =1
+
+
+        }
 
     }
 

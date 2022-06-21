@@ -81,5 +81,28 @@ namespace lab_Form
             x = 10;
             y = 20;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string chi = myparams("國文", 80, 90, 100);
+
+            MessageBox.Show(chi);
+
+            string math = myparams("數學", 80, 90, 100,60);
+
+            MessageBox.Show(math);
+        }
+        string myparams(string cours, params int[] scores) // scores
+        {
+            int total = 0;  //第一值都是從0開始
+            
+            for(int i = 0; i < scores.Length; i++) // for(int i = 0;分號依序執行 i < scores.Length;分號 i++)  Length為最大值
+            {
+                // total = total + scorest[i];
+                total += scores[i];
+            }
+            return cours + "總成績" + total;  //回傳資料
+
+        }
     }
 }
