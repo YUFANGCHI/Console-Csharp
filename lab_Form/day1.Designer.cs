@@ -133,6 +133,7 @@ namespace lab_Form
             // 
             // hello
             // 
+            this.hello.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.hello.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold);
             this.hello.Location = new System.Drawing.Point(490, 325);
             this.hello.Name = "hello";

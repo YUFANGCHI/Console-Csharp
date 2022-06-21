@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static lab_Form.day2;
 
 namespace lab_Form
 {
@@ -23,13 +24,14 @@ namespace lab_Form
             string englishname = textbox2.Text;
             string sex = textbox3.Text;
             string mnbvc1 = textbox4.Text;
-            MessageBox.Show("姓名:"+name+"\n\r英文名字:"+englishname+"\n\r性別:"+sex+"\n\r星座:"+mnbvc1);    // MessageBox為彈出視窗 . show 為顯示變數 ("hello," + 自訂名稱 ) 
-            
-            
+            MessageBox.Show("姓名:"+name+"\n英文名字:"+englishname+"\n性別:"+sex+"\n星座:"+mnbvc1);    // MessageBox為彈出視窗 . show 為顯示變數 ("hello," + 自訂名稱 ) 
+
+            MessageBox.Show(usestatic.stat.ToString());
+            MessageBox.Show(uuusea.staviccc.ToString());
 
         }
 
-      
+   
     }
     }
 

@@ -70,5 +70,25 @@ namespace lab_Form
             Class02 mc = new Class02();
             mc.play06();
         }
+        public class usestatic 
+        {
+            public int inst;
+            public static int stat; 
+        }
+        public class uuusea
+        {
+            public int insss;
+            public static int staviccc;
+                
+        }
+        public class member
+        {
+            public string name;
+            public int age;
+
+        
+        }
+
     }
+
 }

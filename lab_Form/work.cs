@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static lab_Form.Form3;
 
 namespace lab_Form
 {
-    public partial class Form000 : Form
+    public partial class work : Form
     {
-        public Form000()
+        public work()
         {
             InitializeComponent();
-        }
-
-        private void zzz_Click(object sender, EventArgs e)
-        {
-           play mc = new play();
-            MessageBox.Show(mc);
         }
     }
 }
