@@ -30,7 +30,34 @@ namespace HomeWork
         }
         void list()
         {
+            //string 安安 = "啤酒x" + beer + "共NT$" + beer * 120 + "元" +
+            //    "\r\n龍舌蘭x" + tequila + "共NT$" + tequila * 180 + "元" +
+            //    "\r\n威士忌x" + whisky + "共NT$" + whisky * 120 + "元" +
+            //    "\r\n紅酒x" + wine + "共NT$" + wine * 150 + "元";
+            //textBox1.Text = 安安;
+            string 清單 = "";
 
+            if (beer >= 1)
+            {
+                //如果 += "啤酒x" + beer + "共NT$" + beer * 120 + "元";
+                清單 += $"啤酒{beer}共NT${beer * 120}元";
+                textBox1.Text = 清單;
+            }
+            if (tequila >= 1)
+            {
+                清單 += "\r\n龍舌蘭x" + tequila + "共NT$" + tequila * 180 + "元";
+                textBox1.Text = 清單;
+            }
+            if (whisky >= 1)
+            {
+                清單 = "\r\n威士忌x" + whisky + "共NT$" + whisky * 120 + "元";
+                textBox1.Text = 清單;
+            }
+            if (wine >= 1)
+            {
+                清單 = "\r\n紅酒x" + wine + "共NT$" + wine * 150 + "元";
+                textBox1.Text = 清單;
+            }
         }
 
         private void btn_beer_Click(object sender, EventArgs e)
@@ -38,7 +65,7 @@ namespace HomeWork
             beer ++;
             total();  //int AA = beer * 120 + tequila * 180 + whisky * 120 + wine * 150;
                       //textBox2.Text = "NT$" + AA;
-            
+            list();
         }
 
         private void btn_tequila_Click(object sender, EventArgs e)
@@ -46,6 +73,7 @@ namespace HomeWork
             tequila ++;
             total();  //int AA = beer * 120 + tequila * 180 + whisky * 120 + wine * 150;
                       //textBox2.Text = "NT$" + AA;
+            list();
         }
 
         private void btn_whisky_Click(object sender, EventArgs e)
@@ -53,6 +81,7 @@ namespace HomeWork
             whisky++;
             total();  //int AA = beer * 120 + tequila * 180 + whisky * 120 + wine * 150;
                       //textBox2.Text = "NT$" + AA;
+            list();
         }
 
         private void btn_wine_Click(object sender, EventArgs e)
@@ -60,6 +89,7 @@ namespace HomeWork
             wine++;
             total();  //int AA = beer * 120 + tequila * 180 + whisky * 120 + wine * 150;
                       //textBox2.Text = "NT$" + AA;
+            list();
         }
 
         private void button5_Click(object sender, EventArgs e)

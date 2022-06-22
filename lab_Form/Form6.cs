@@ -11,7 +11,7 @@ using static lab_Form.day2;
 
 namespace lab_Form
 {
-    public partial class Form6 : Form
+    public partial class Form6 : Form   //第16章
     {
         public Form6()
         {

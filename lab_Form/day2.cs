@@ -92,6 +92,20 @@ namespace lab_Form
         {
             admin,  // admin=0
             user =1
+        }
+        public struct product  //結構
+        {
+           //public string productname;
+           //public decimal productprice;
+
+            public string productname { get; set; }
+            public decimal productprice { get; set; }
+
+            public product(string name,decimal price)
+            {
+                productname = name;
+                productprice = price;
+            }
 
 
         }
